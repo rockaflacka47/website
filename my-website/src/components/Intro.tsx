@@ -19,7 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Intro() {
   return (
-    <Card sx={{ display: "flex", minHeight: "80vh" }}>
+    <Card sx={{ display: "flex", minHeight: "80vh", mt: "5vh" }}>
       <Box sx={{ display: "flex", flexDirection: "column", minHeight: "80vh" }}>
         <CardContent sx={{ flex: "1 0 auto" }}>
         <CardMedia

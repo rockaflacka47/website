@@ -1,33 +1,14 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
-import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
-import messagingService from "../assets/mesagingService.png";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://david-rocker.com/">
-        david-rocker.com
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
 
 const cards = [
   {
@@ -52,8 +33,8 @@ export default function Album() {
         <Box
           sx={{
             bgcolor: "background.paper",
-            pt: 8,
-            pb: 6,
+            pt: 6,
+            pb: 2,
           }}
         ></Box>
         <Container sx={{ py: 8 }} maxWidth="lg">
@@ -89,7 +70,7 @@ export default function Album() {
         </Container>
       </main>
       {/* Footer */}
-      <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
+      <Box sx={{ bgcolor: "background.paper", p: 4 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom>
           Notice
         </Typography>
@@ -102,7 +83,6 @@ export default function Album() {
           If the links provide a 502 and you want to see/play with them please contact me at drocker3738 (at) gmail (dot) com. 
           Most of the EC2s will be turned off while not in active development.
         </Typography>
-        <Copyright />
       </Box>
       {/* End footer */}
     </ThemeProvider>

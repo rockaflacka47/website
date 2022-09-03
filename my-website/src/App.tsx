@@ -5,6 +5,7 @@ import Album from "./components/Album";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Nav from "./components/nav";
 import Intro from "./components/Intro";
+import { Copyright } from "./components/Copyright";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,12 +13,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <Album /> */}
         <Nav />
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="projects" element={<Album />} />
         </Routes>
+        <Copyright />
       </div>
     </BrowserRouter>
   );
