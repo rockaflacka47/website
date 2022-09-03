@@ -36,7 +36,7 @@ const cards = [
     description:
       "Built with React, Node, Express, Prisma, Socket-io, and MySQL this " +
       " web based messaging app simulates basic messaging functions. ",
-    img: "src/assets/messagingService.png",
+    img: "/messagingService.png",
     link: "https://messagingservice.david-rocker.com"
   },
 ];
