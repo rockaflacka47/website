@@ -11,17 +11,23 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   textAlign: "center",
   color: theme.palette.text.secondary,
-  minHeight: 194,
-  height: 194,
+  minHeight: '80vh',
+  height: '80vh',
   justifyContent: "center",
   alignItems: "center",
 }));
 
 export default function Intro() {
   return (
-    <Card sx={{ display: "flex" }}>
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
+    <Card sx={{ display: "flex", minHeight: "80vh" }}>
+      <Box sx={{ display: "flex", flexDirection: "column", minHeight: "80vh" }}>
         <CardContent sx={{ flex: "1 0 auto" }}>
+        <CardMedia
+        component="img"
+        sx={{ width: '40vw', height: '70vh', margin: 'auto' }}
+        image="src/assets/profile.jpg"
+        alt="David Rocker"
+      />
           <Typography
             variant="subtitle1"
             color="text.secondary"
@@ -35,12 +41,6 @@ export default function Intro() {
           </Typography>
         </CardContent>
       </Box>
-      <CardMedia
-        component="img"
-        sx={{ width: 251 }}
-        image="src/assets/messagingService.png"
-        alt="David Rocker"
-      />
     </Card>
   );
 }

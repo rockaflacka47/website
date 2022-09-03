@@ -39,24 +39,6 @@ const cards = [
     img: "src/assets/messagingService.png",
     link: "https://messagingservice.david-rocker.com"
   },
-  {
-    id: 2,
-    title: "Messaging Service",
-    description:
-      "Built with React, Node, Express, Prisma, Socket-io, and MySQL this " +
-      " web based messaging app simulates basic messaging functions. ",
-    img: "/mesagingService.png",
-    link: "https://messagingservice.david-rocker.com"
-  },
-  {
-    id: 3,
-    title: "Messaging Service",
-    description:
-      "Built with React, Node, Express, Prisma, Socket-io, and MySQL this " +
-      " web based messaging app simulates basic messaging functions. ",
-    img: "/mesagingService.png",
-    link: "https://messagingservice.david-rocker.com"
-  },
 ];
 
 const theme = createTheme();
@@ -76,7 +58,7 @@ export default function Album() {
         ></Box>
         <Container sx={{ py: 8 }} maxWidth="lg">
           {/* End hero unit */}
-          <Grid container spacing={4}>
+          <Grid container spacing={4} justifyContent='center'>
             {cards.map((card) => (
               <Grid item key={card.id} xs={12} sm={6} md={4}>
                   <Link href={card.link} underline="none">
