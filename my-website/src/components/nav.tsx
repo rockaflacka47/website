@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import ReactDOM from "react-dom/client";
 import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
@@ -14,6 +14,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+
 
 const pages = [
   {
@@ -34,7 +35,7 @@ const pages = [
 ];
 
 export default function Nav() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
+  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(
     null
   );
 
@@ -50,7 +51,6 @@ export default function Nav() {
     <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -81,7 +81,7 @@ export default function Nav() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
+                <MenuItem key={page.title} onClick={handleCloseNavMenu}>
                   <Link to={page.route}>
                     <Typography textAlign="center">{page.title}</Typography>
                   </Link>
@@ -91,7 +91,7 @@ export default function Nav() {
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Link to={page.route}>
+              <Link to={page.route} key={page.title}>
                 <Button
                   key={page.id}
                   onClick={handleCloseNavMenu}

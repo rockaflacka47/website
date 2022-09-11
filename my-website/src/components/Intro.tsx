@@ -19,12 +19,12 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Intro() {
   return (
-    <Card sx={{ display: "flex", minHeight: "80vh", mt: "5vh" }}>
+    <Card sx={{ display: "flex", minHeight: "80vh", mt: "5vh" }} variant="outlined">
       <Box sx={{ display: "flex", flexDirection: "column", minHeight: "80vh" }}>
         <CardContent sx={{ flex: "1 0 auto" }}>
         <CardMedia
         component="img"
-        sx={{ width: '40vw', height: '70vh', margin: 'auto' }}
+        sx={{ width: '45vw', height: '65vh', margin: 'auto', objectFit: 'contain'}}
         image="/profile.jpg"
         alt="David Rocker"
       />

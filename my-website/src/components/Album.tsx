@@ -9,6 +9,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
 
 const cards = [
   {
@@ -22,9 +23,10 @@ const cards = [
   },
 ];
 
-const theme = createTheme();
+
 
 export default function Album() {
+    const theme = useTheme();
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
