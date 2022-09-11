@@ -10,17 +10,17 @@ export function Copyright() {
     <div>
       <Grid2 container spacing={0} justifyContent="center" marginTop="2vh">
         <Grid2 xs={2} md={0.5}>
-          <Link href="https://www.instagram.com/rockaflacka/">
+          <Link href="https://www.instagram.com/rockaflacka/" target="_blank">
             <Instagram />
           </Link>
         </Grid2>
         <Grid2 xs={2} md={0.5}>
-          <Link href="https://github.com/rockaflacka47/">
+          <Link href="https://github.com/rockaflacka47/" target="_blank">
             <GitHub />
           </Link>
         </Grid2>
         <Grid2 xs={2} md={0.5}>
-          <Link href="https://www.linkedin.com/in/david-rocker-505793137/">
+          <Link href="https://www.linkedin.com/in/david-rocker-505793137/" target="_blank">
             <LinkedIn />
           </Link>
         </Grid2>

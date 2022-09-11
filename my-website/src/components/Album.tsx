@@ -44,7 +44,7 @@ export default function Album() {
           <Grid container spacing={4} justifyContent='center'>
             {cards.map((card) => (
               <Grid item key={card.id} xs={12} sm={6} md={4}>
-                  <Link href={card.link} underline="none">
+                  <Link href={card.link} underline="none" target="_blank">
                 <Card
                   sx={{
                     height: "100%",

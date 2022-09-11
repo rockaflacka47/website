@@ -16,7 +16,7 @@ export default function Acro() {
       img: "/monoF2h_1.jpg",
       title: "Mono F2h",
     },
-   
+
     {
       img: "/backBend.jpg",
       title: "H2h Scorpion",
@@ -27,9 +27,9 @@ export default function Acro() {
       title: "Front Tuck",
     },
     {
-        img: "/2high.jpg",
-        title: "Two High",
-      },
+      img: "/2high.jpg",
+      title: "Two High",
+    },
     {
       img: "/lightPainting.jpg",
       title: "Light Painting",
@@ -38,7 +38,7 @@ export default function Acro() {
       img: "/martini_1.jpg",
       title: "Martini",
     },
-    
+
     {
       img: "/extendedH2h.jpeg",
       title: "Extended",
@@ -48,13 +48,13 @@ export default function Acro() {
       title: "Corbette",
     },
     {
-        img: "/dragUp.jpg",
-        title: "DragUp",
-      },
+      img: "/dragUp.jpg",
+      title: "DragUp",
+    },
   ];
   return (
     <div>
-      <Card sx={{ display: "flex" }}>
+      <Card sx={{ display: "flex", mt: "5vh" }}>
         <Box
           sx={{
             display: "flex",
@@ -76,10 +76,35 @@ export default function Acro() {
               festivals. If you organize a festival or want me to attend a
               festival near you please let me know :).
             </Typography>
+            <ImageList
+              sx={{
+                width: '60vw',
+                margin: "auto",
+                display: { md: "none", xs: "block" },
+                mt: "3vh"
+              }}
+              cols={3}
+              gap={4}
+              //   rowHeight={164}
+            >
+              {itemData.map((item) => (
+                <ImageListItem key={item.img}>
+                  <img
+                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                    alt={item.title}
+                    loading="lazy"
+                  />
+                </ImageListItem>
+              ))}
+            </ImageList>
           </CardContent>
         </Box>
         <ImageList
-          sx={{ width: 500, margin: "auto" }}
+          sx={{
+            width: 500,
+            margin: "auto",
+            display: { md: "block", xs: "none" },
+          }}
           cols={3}
           gap={4}
           //   rowHeight={164}

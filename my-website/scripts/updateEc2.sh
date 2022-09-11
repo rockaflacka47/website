@@ -6,6 +6,6 @@ rm -rf /home/ubuntu/website/my-website/dist
 
 npm run build
 
-sudo cp -r /home/ubuntu/website/my-website/dist/* /var/www/html
+sudo rm -rf -v !(*.htaccess) /var/www/html/*
 
 sudo systemctl restart apache2.service
