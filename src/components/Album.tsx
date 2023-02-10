@@ -17,10 +17,19 @@ const cards = [
     title: "Messaging Service",
     description:
       "Built with React, Node, Express, Prisma, Socket-io, and MySQL this " +
-      " web based messaging app simulates basic messaging functions. ",
-    img: "/messagingService.png",
+      "web based messaging app simulates basic messaging functions. ",
+    img: "https://david-rocker-images.s3.eu-west-3.amazonaws.com/messagingService.png",
     link: "https://messagingservice.david-rocker.com"
   },
+  {
+    id: 2,
+    title: "Webshop",
+    description:
+      "Built with React, AWS (Lambda, API Gateway, Cloudwatch), terraform, stripe " +
+      "this webshop is fully functional.",
+    img: "https://david-rocker-images.s3.eu-west-3.amazonaws.com/Screenshot+2023-02-10+at+11.22.02.png",
+    link: "https://webshop.david-rocker.com"
+  }
 ];
 
 

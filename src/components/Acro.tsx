@@ -2,7 +2,6 @@ import {
   Box,
   Card,
   CardContent,
-  CardMedia,
   ImageList,
   ImageListItem,
   Typography,
