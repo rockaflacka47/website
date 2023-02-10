@@ -13,42 +13,42 @@ import { ReactDOM } from "react";
 export default function Acro() {
   const itemData = [
     {
-      img: "/monoF2h_1.jpg",
+      img: "https://david-rocker-images.s3.eu-west-3.amazonaws.com/monoF2h_1.jpg",
       title: "Mono F2h",
     },
 
     {
-      img: "/backBend.jpg",
+      img: "https://david-rocker-images.s3.eu-west-3.amazonaws.com/backBend.jpg",
       title: "H2h Scorpion",
     },
 
     {
-      img: "/frontTuck.jpg",
+      img: "https://david-rocker-images.s3.eu-west-3.amazonaws.com/frontTuck.jpg",
       title: "Front Tuck",
     },
     {
-      img: "/2high.jpg",
+      img: "https://david-rocker-images.s3.eu-west-3.amazonaws.com/2high.jpg",
       title: "Two High",
     },
     {
-      img: "/lightPainting.jpg",
+      img: "https://david-rocker-images.s3.eu-west-3.amazonaws.com/lightPainting.jpg",
       title: "Light Painting",
     },
     {
-      img: "/martini_1.jpg",
+      img: "https://david-rocker-images.s3.eu-west-3.amazonaws.com/martini_1.jpg",
       title: "Martini",
     },
 
     {
-      img: "/extendedH2h.jpeg",
+      img: "https://david-rocker-images.s3.eu-west-3.amazonaws.com/extendedH2h.jpeg",
       title: "Extended",
     },
     {
-      img: "/courbette_1.jpg",
+      img: "https://david-rocker-images.s3.eu-west-3.amazonaws.com/courbette_1.jpg",
       title: "Corbette",
     },
     {
-      img: "/dragUp.jpg",
+      img: "https://david-rocker-images.s3.eu-west-3.amazonaws.com/dragUp.jpg",
       title: "DragUp",
     },
   ];
