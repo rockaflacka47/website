@@ -25,7 +25,7 @@ export default function Intro() {
         <CardMedia
         component="img"
         sx={{ width: '45vw', height: '65vh', margin: 'auto', objectFit: 'contain'}}
-        image="/2high.jpg"
+        image="https://david-rocker-images.s3.eu-west-3.amazonaws.com/2high.jpg"
         alt="David Rocker"
       />
           <Typography
